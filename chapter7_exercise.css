@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-header {
+.main-visual { /*header要素にしていたところをmainーvisualクラスに変えた*/
   width: 100%;
   height: 400px;
   background-image: url(演習問題/img/mv.jpg);
@@ -12,21 +12,37 @@ header {
   background-position: bottom;
 }
 
-h1 {
-  color: black;
-  padding: 20px 0 0 20px;
+.headline { /*<h1>にheadlineクラスと名付けた*/
+  padding: 20px;
 }
 
-.blog-box {
+main { /*追加したmain要素*/
   width: 840px;
-  color: gray;
-  justify-content: left;
-  margin: 20px auto 50px;
+  margin: 50px auto;　/*上下の余白は指定あり、左右は何も指定なし*/
 }
 
-.blog-item {
-  width: 840px;
-  font-size: 12px;
-  padding: 30px 0;
-  border-bottom: 1px solid gray;
+/*service1〜4のcss*/
+/*ひとつひとつ分けた方が、後から変更しやすそう*/
+
+.service1 {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 30px;
+}
+
+.service2 {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 30px;
+}
+
+.service3 {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 30px;
+}
+
+.service4 {
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 30px;
 }
